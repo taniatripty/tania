@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    margin: 50px 120px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.menuicon,.img1{
+    font-size: 30px;
+    display: none;
+}
+.right>ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+.left h2{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+}
+.banner{
+    margin: 30px 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner1{
+   margin-top: 70px;
+}
+.banner1 .tittle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}
+.banner1 p{
+    font-size:1rem;
+    margin-bottom: 20px;
+}
+.btn{
+    height: 48px;
+    background-color: rgb(232, 72, 104);
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding:15px;
+    border: none;
+}
+.btn i{
+    color: white;
+   
+}
+.images{
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: contain;
+  
+}
+ .images img{
+    margin: 0 auto;
+ }
+
+main{
+    margin: 50px 120px;
+}
+.part1{
+
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 60px;
+    border: 1px solid transparent;
+    padding: 30px;
+    box-shadow: 4px 4px 5px rgb(232, 223, 223);
+}
+.card-section p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:12px;
+}
+.card{
+    box-shadow: 4px 4px 5px rgb(232, 223, 223);
+    margin-bottom: 10px;
+    padding: 15px;
+
+}
+.card .tittle{
+    margin-bottom:10px;
+    font-size: 1.2rem;
+}
+.card .number{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.card i{
+    color:#FB8200 ;
+    margin-bottom: 8px;
+}
+.part2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.discribtion{
+    margin-top: 30px;
+}
+.discribtion .tittle{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.discribtion p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.discribtion .btn{
+    width: 140px;
+    border-radius: 2px;
+}
+.footer-part{
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 30px;
+   
+}
+
+.footer-part h3{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.footer-part p{
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.footer-part i{
+    margin-right: 15px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+@media screen and (max-width:576px) {
+  .menuicon,.img1{
+    display: block;
+  }
+ .right>ul{
+   position:absolute;
+   width: 100%;
+   
+  top: 50px;
+  background: #b7997a;
+  left: 0;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  
+
+ }
+ ul li{
+    padding: 10px;
+
+ }
+  ul li a{
+    font-size: 22px;
+  }
+  li:hover,li:active{
+    color: red;
+  }
+  
+    
+    
+    
+ .banner,main,.navbar{
+    margin: 10px;
+ }
+ .banner,.part2{
+    flex-direction: column;
+ }
+ .banner1{
+    order: 1;
+ }
+ img{
+    width: 100%;
+
+ }
+ .images img{
+    margin: 0 auto;
+ }
+ .images{
+    order: 0;
+    background-size: contain;
+    background-position: cover;
+    padding: 30px;
+    margin-bottom: 20px;
+ }
+ .part1{
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+ }
+ .cards{
+    grid-template-columns: repeat(1,1fr);
+ }
+    
+}
